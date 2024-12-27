@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-UserManagementSystemApplication<UserManagementSystem>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.example.UserManagementSystem.UserManagementSystemApplication",
+      "projectName": "UserManagementSystem",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
