@@ -13,8 +13,51 @@ A full-stack **Worker Management System** built with **Spring Boot** (backend) a
 ---
 
 ## Architecture
-<img width="900" height="500" alt="image" src="https://github.com/user-attachments/assets/84712528-dfbf-4cdf-91cd-93334c45e2ae" />
+<img width="400" height="300" alt="MVC Architecture Diagram" src="https://github.com/user-attachments/assets/84712528-dfbf-4cdf-91cd-93334c45e2ae" />
 
+# MVC Architecture in Worker Management System
+
+## 1. Model (Data Layer)
+
+**Definition:**  
+Represents the **data** of the application and the **rules/business logic** for handling it.
+
+**In this project:**  
+- **Entity:** `OurUsers.java` → Defines database table structure.  
+- **Repository:** `UsersRepo.java` → Handles database operations (CRUD).  
+- **DTO:** `ReqRes.java` → Transfers data safely between layers.
+
+---
+
+## 2. View (Presentation Layer)
+
+**Definition:**  
+The **interface** that users interact with.
+
+**In this project:**  
+- ReactJS components: `LoginPage.jsx`, `RegistrationPage.jsx`, `ProfilePage.jsx`, `Navbar.jsx`  
+- Handles **HTML, CSS, and UI logic**.
+
+---
+
+## 3. Controller (Request Handling Layer)
+
+**Definition:**  
+Receives requests from the frontend, calls the Model or Service, and sends responses back.
+
+**In this project:**  
+- `UserManagementController.java` → Handles login, registration, profile requests, etc.
+
+---
+
+## 4. Service Layer (Business Logic)
+
+**Definition:**  
+Processes **business rules** before interacting with the Model or Controller.  
+In Spring Boot, the **Service layer is an additional layer** not originally part of classic MVC. It helps **separate business logic** from controllers and models, making the code cleaner and easier to maintain.
+
+**In this project:**  
+- `UserManagementService.java`, `OurUserDetailsService.java`, `JWTUtils.java` → Handles authentication, JWT token creation, and other logic.
 
 ##  Running the Project with Docker (Future extension)
 Can be containerized the application using Docker Compose.
@@ -115,6 +158,13 @@ npm test
 - Implement role-based access control
 - Add email verification during registration
 - Add Docker Compose for seamless backend + frontend + database setup
+
+**Note:**  
+- In **classic MVC**, Service is optional.  
+- In **real-world Spring Boot projects**, Service layer is highly recommended for **clean architecture** and **maintainability**.  
+- Classic MVC = Model + View + Controller  
+- Spring Boot MVC = Model + View + Controller + Service
+- With out service layer all service layer code needs to be written in controller whcih makes repo and folder structure messy 
 
 
 
