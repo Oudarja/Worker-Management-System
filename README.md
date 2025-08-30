@@ -1,4 +1,4 @@
-### Worker Management System – Spring Boot & ReactJS
+## Worker Management System – Spring Boot & ReactJS
 
 A full-stack **Worker Management System** built with **Spring Boot** (backend) and **ReactJS** (frontend).The project provides user authentication (JWT-based), registration, login, and profile management functionalities with a responsive React-based interface.
 ---
