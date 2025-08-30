@@ -13,7 +13,7 @@ A full-stack **Worker Management System** built with **Spring Boot** (backend) a
 ---
 
 ## Architecture
-<img width="153.6" height="102.4" alt="image" src="https://github.com/user-attachments/assets/84712528-dfbf-4cdf-91cd-93334c45e2ae" />
+<img width="1000" height="900" alt="image" src="https://github.com/user-attachments/assets/84712528-dfbf-4cdf-91cd-93334c45e2ae" />
 
 
 ##  Running the Project with Docker (Future extension)
